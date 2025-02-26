@@ -18,7 +18,6 @@ spec:
       containers:
         - name: order-service
           image: us-central1-docker.pkg.dev/food-ordering-system-452021/food-ordering-system-repository/order.service:1.0.SNAPSHOT
-                 us-central1-docker.pkg.dev/food-ordering-system-452021/food-ordering-system-repository/order.service
           env:
             - name: SPRING_DATASOURCE_URL
               value: "jdbc:postgresql://postgres-service:5432/postgres?currentSchema=order&binaryTransfer=true&reWriteBatchedInserts=true&stringtype=unspecified"
